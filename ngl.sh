@@ -1,14 +1,7 @@
 #!/bin/bash
 
 URL="https://ngl.link/api/submit"
- 
-pkg install figlet
-clear
 
-figlet NGL BOMBER
-echo "Creator: Mark P."
-echo "Version:1.0.1"
-echo " "
 UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/refs/heads/main/ngl.sh"
 LOCAL_FILE="$0"
 
@@ -29,6 +22,15 @@ else
     echo "You are using the latest version."
 fi
 
+ 
+pkg install figlet
+clear
+
+figlet NGL BOMBER
+echo "Creator: Mark P."
+echo "Version:1.0.2"
+echo " "
+echo " "
 
 read -p "Enter the username: " User
 read -p "Enter the message: " msg
