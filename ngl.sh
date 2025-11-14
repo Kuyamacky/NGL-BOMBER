@@ -1,13 +1,11 @@
 #!/bin/bash
 
 URL="https://ngl.link/api/submit"
-
-UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/refs/heads/main/ngl.sh"
+UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/main/ngl.sh"
 LOCAL_FILE="$0"
 
 echo "Checking for updates..."
 
-# Get version numbers
 remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:")
 local_version=$(grep -m1 "Version:" "$LOCAL_FILE")
 
