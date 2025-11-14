@@ -5,6 +5,7 @@ UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/main/ngl.sh"
 LOCAL_FILE="$0"
 
 echo "Checking for updates..."
+sleep 3
 
 remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:")
 local_version=$(grep -m1 "Version:" "$LOCAL_FILE")
@@ -21,12 +22,12 @@ else
 fi
 
  
-pkg install figlet
+pkg install -y figlet >/dev/null 2>&1
 clear
 
 figlet NGL BOMBER
 echo "Creator: Mark P."
-echo "Version:1.0.2"
+echo "Version:1.0.3"
 echo " "
 echo " "
 
