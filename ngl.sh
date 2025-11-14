@@ -26,8 +26,8 @@ pkg install -y figlet >/dev/null 2>&1
 clear
 
 figlet NGL BOMBER
-echo "Creator: Mark P."
-echo "Version:1.0.3"
+echo "Creator: Makii official"
+echo "Version:1.0.4"
 echo " "
 echo " "
 
