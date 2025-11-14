@@ -2,13 +2,13 @@
 
 URL="https://ngl.link/api/submit"
 UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/main/ngl.sh"
-LOCAL_FILE="$0"
+LOCAL_FILE="ngl.sh"  # use actual filename
 
 echo "Checking for updates..."
 sleep 3
 
-remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:")
-local_version=$(grep -m1 "Version:" "$LOCAL_FILE")
+remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:" | tr -d ' ')
+local_version=$(grep -m1 "Version:" "$LOCAL_FILE" | tr -d ' ')
 
 if [ "$remote_version" != "$local_version" ]; then
     echo "New update found!"
