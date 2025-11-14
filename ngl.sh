@@ -9,7 +9,7 @@ figlet NGL BOMBER
 echo "Creator: Mark P."
 echo "Version:1.0.1"
 echo " "
-UPDATE_URL="YOUR_RAW_GITHUB_LINK"
+UPDATE_URL="https://github.com/Kuyamacky/NGL-BOMBER.git"
 LOCAL_FILE="$0"
 
 echo "Checking for updates..."
