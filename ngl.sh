@@ -9,6 +9,26 @@ figlet NGL BOMBER
 echo "Creator: Mark P."
 echo "Version:1.0.1"
 echo " "
+UPDATE_URL="YOUR_RAW_GITHUB_LINK"
+LOCAL_FILE="$0"
+
+echo "Checking for updates..."
+
+# Get version numbers
+remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:")
+local_version=$(grep -m1 "Version:" "$LOCAL_FILE")
+
+if [ "$remote_version" != "$local_version" ]; then
+    echo "New update found!"
+    echo "Updating..."
+    curl -s -o "$LOCAL_FILE" "$UPDATE_URL"
+    chmod +x "$LOCAL_FILE"
+    echo "Update complete. Restart the script."
+    exit
+else
+    echo "You are using the latest version."
+fi
+
 
 read -p "Enter the username: " User
 read -p "Enter the message: " msg
