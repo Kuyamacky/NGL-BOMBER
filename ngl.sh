@@ -30,7 +30,6 @@ echo "Creator: Makii official"
 echo "Version:1.0.5"
 echo " "
 echo " "
-echo "version 5"
 read -p "Enter the username: " User
 read -p "Enter the message: " msg
 
