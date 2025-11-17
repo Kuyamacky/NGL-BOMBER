@@ -5,7 +5,7 @@ UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/main/ngl.sh"
 LOCAL_FILE="ngl.sh"  # use actual filename
 
 echo "Checking for updates..."
-sleep 3
+sleep 2
 
 remote_version=$(curl -s "$UPDATE_URL" | grep -m1 "Version:" | tr -d ' ')
 local_version=$(grep -m1 "Version:" "$LOCAL_FILE" | tr -d ' ')
