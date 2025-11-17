@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
 URL="https://ngl.link/api/submit"
 UPDATE_URL="https://raw.githubusercontent.com/Kuyamacky/NGL-BOMBER/main/ngl.sh"
