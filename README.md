@@ -21,7 +21,7 @@ A simple script for sending messages via NGL.
 # Install Git
 pkg install git
 ```
-#install Figlet
+# install Figlet
 ```bash
 pkg install figlet
 ```
